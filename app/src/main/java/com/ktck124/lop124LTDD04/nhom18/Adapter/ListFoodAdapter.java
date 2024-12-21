@@ -33,8 +33,8 @@ public class  ListFoodAdapter extends RecyclerView.Adapter<ListFoodAdapter.FoodV
         this.foodList = foodList;
 
         // Khởi tạo Firebase Realtime Database
-        FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
-        databaseReference = firebaseDatabase.getReference("ChiTietDonHang_MonAn");
+//        FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
+//        databaseReference = firebaseDatabase.getReference("ChiTietDonHang_MonAn");
     }
 
     @NonNull
@@ -52,19 +52,6 @@ public class  ListFoodAdapter extends RecyclerView.Adapter<ListFoodAdapter.FoodV
 
         // Load hình ảnh
 //        Glide.with(context).load(food.getImage()).into(holder.ivFoodImage);
-
-        // Thêm sự kiện click
-//        holder.itemView.setOnClickListener(v -> {
-//            // Tạo Intent để chuyển sang Activity chi tiết món ăn
-//            Intent intent = new Intent(context, FoodDetailActivity.class);
-//
-//            // Truyền idMonAn qua Intent
-//            intent.putExtra("idMonAn", food.getId());
-//
-//            // Khởi động Activity
-//            context.startActivity(intent);
-//        });
-
 
     }
 

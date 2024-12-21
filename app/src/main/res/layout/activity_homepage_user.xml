@@ -27,60 +27,81 @@
             android:layout_height="wrap_content">
 
 
-            <TextView
-                android:id="@+id/textView9"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="32dp"
-                android:layout_marginTop="32dp"
-                android:text="Đặt hàng liền tay cùng Yummy!"
-                android:textColor="#D02828"
-                android:textSize="15sp"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
             <ImageView
                 android:id="@+id/btntb"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_marginTop="25dp"
                 android:layout_marginEnd="15dp"
-                app:layout_constraintEnd_toEndOf="@+id/textView9"
                 app:layout_constraintHorizontal_bias="0.972"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <EditText
-                android:id="@+id/search"
+
+            <LinearLayout
+                android:id="@+id/hotenList"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="24dp"
-                android:layout_marginEnd="16dp"
-                android:ems="10"
-                android:hint="  Tìm món ăn yêu thích của bạn"
-                android:inputType="text"
-                android:paddingLeft="10dp"
-                android:paddingTop="10dp"
-                android:paddingBottom="10dp"
-                android:textSize="16sp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="@+id/btntb"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView9" />
+                tools:ignore="MissingConstraints">
 
-            <!-- Thanh cuon ngang -->
+                <TextView
+                    android:id="@+id/hoten1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hoang Dinh Lam Hai"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
 
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/thanhVienRecyclerView"
-                android:layout_width="match_parent"
+                <TextView
+                    android:id="@+id/masv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="22115053122315"
+                    android:textColor="#D02828"
+                    android:textSize="16sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/hotenList2"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/search"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="@+id/viewpager"
                 app:layout_constraintEnd_toEndOf="parent"
-                android:orientation="horizontal" />
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="MissingConstraints">
+
+                <TextView
+                    android:id="@+id/hoten2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Le Thi Oanh"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/masv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="22115053122327"
+                    android:textColor="#D02828"
+                    android:textSize="16sp" />
+
+
+            </LinearLayout>
+
 
             <androidx.viewpager.widget.ViewPager
                 android:id="@+id/viewpager"
@@ -89,7 +110,7 @@
                 android:layout_marginTop="15dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/thanhVienRecyclerView" />
+                app:layout_constraintTop_toBottomOf="@+id/hotenList" />
 
 
             <TextView

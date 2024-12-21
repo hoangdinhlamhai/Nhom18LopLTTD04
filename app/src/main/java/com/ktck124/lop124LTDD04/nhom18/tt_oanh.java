@@ -1,8 +1,5 @@
 package com.ktck124.lop124LTDD04.nhom18;
 
-import com.ktck124.lop124LTDD04.nhom18.Oanh.ThongTinCaNhan;
-
-
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -19,6 +16,8 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.ktck124.lop124LTDD04.nhom18.Oanh.ThongTinCaNhan;
+
 
 public class tt_oanh extends AppCompatActivity {
 
